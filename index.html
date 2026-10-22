@@ -337,231 +337,257 @@
   </section>
 
   <!-- SPEAKERS -->
-  <section class="section" id="SPEAKERS" aria-labelledby="speakers-title">
+  <section class="speakers-band" id="SPEAKERS" aria-labelledby="speakers-title">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="section-head section-head--dark reveal">
         <div>
           <p class="overline">Voices at NED 2026</p>
           <h2 class="display" id="speakers-title">Speakers</h2>
         </div>
-        <p class="lede">Tap a speaker to view their full NED 2026 profile.</p>
+        <p class="lede">Policy-makers, scientists, strategists and industry leaders who took the stage in Ooty. Open any card for the full speaker profile.</p>
       </div>
-      <div class="people people--speakers">
-        <article class="person reveal" data-delay="0">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/ajai-chowdhry.jpg" data-caption="Ajai Chowdhry &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/ajai-chowdhry.jpg" alt="Ajai Chowdhry" width="480" height="480" loading="lazy"></span>
-            <h3>Ajai Chowdhry</h3>
-            <p>Co-founder, HCL; Padma Bhushan Recipient; Chairman, Mission Governing Board, National Quantum Mission of India &amp; Distinguished Fellow, NITI Aayog</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/amitabh-kant.jpg" data-caption="Amitabh Kant &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/amitabh-kant.jpg" alt="Amitabh Kant" width="480" height="480" loading="lazy"></span>
-            <h3>Amitabh Kant</h3>
-            <p>Former G20 Sherpa &amp; Former CEO, NITI Aayog</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/nitin-a-gokhale.jpg" data-caption="Nitin A Gokhale &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/nitin-a-gokhale.jpg" alt="Nitin A Gokhale" width="480" height="480" loading="lazy"></span>
-            <h3>Nitin A Gokhale</h3>
-            <p>Strategic Affairs Analyst; Author; Media Entrepreneur; Conflict Journalist &amp; Founder, BharatShakti Group</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/ravi-murugan.jpg" data-caption="Maj Gen Ravi Murugan, PVSM, AVSM &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/ravi-murugan.jpg" alt="Maj Gen Ravi Murugan, PVSM, AVSM" width="480" height="480" loading="lazy"></span>
-            <h3>Maj Gen Ravi Murugan, PVSM, AVSM</h3>
-            <p>Former General Officer Commanding (GOC), Karnataka &amp; Kerala</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/satish-kumar.jpg" data-caption="Satish Kumar &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/satish-kumar.jpg" alt="Satish Kumar" width="480" height="480" loading="lazy"></span>
-            <h3>Satish Kumar</h3>
-            <p>President and Executive Director, Alliance for an Energy Efficient Economy (AEEE)</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <button type="button" class="person-btn" data-group="flyers" data-full="assets/img/flyers/soumya-swaminathan.jpg" data-caption="Soumya Swaminathan &mdash; NED 2026 speaker profile">
-            <span class="avatar"><img src="assets/img/speakers/soumya-swaminathan.jpg" alt="Soumya Swaminathan" width="480" height="480" loading="lazy"></span>
-            <h3>Soumya Swaminathan</h3>
-            <p>Chairperson, MS Swaminathan Research Foundation &amp; Former WHO Chief Scientist</p>
-            <span class="more">View profile <svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span>
-          </button>
-        </article>
+      <div class="spk-grid" tabindex="0" aria-label="NED 2026 speakers">
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/ajai-chowdhry.jpg" data-caption="Ajai Chowdhry &mdash; NED 2026 speaker profile" aria-label="View Ajai Chowdhry&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/ajai-chowdhry.webp" alt="Ajai Chowdhry" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Ajai Chowdhry</h3>
+              <p>Co-founder, HCL; Padma Bhushan Recipient; Chairman, Mission Governing Board, National Quantum Mission of India &amp; Distinguished Fellow, NITI Aayog</p>
+            </div>
+          </article>
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/amitabh-kant.jpg" data-caption="Amitabh Kant &mdash; NED 2026 speaker profile" aria-label="View Amitabh Kant&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/amitabh-kant.webp" alt="Amitabh Kant" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Amitabh Kant</h3>
+              <p>Former G20 Sherpa &amp; Former CEO, NITI Aayog</p>
+            </div>
+          </article>
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/nitin-a-gokhale.jpg" data-caption="Nitin A Gokhale &mdash; NED 2026 speaker profile" aria-label="View Nitin A Gokhale&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/nitin-a-gokhale.webp" alt="Nitin A Gokhale" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Nitin A Gokhale</h3>
+              <p>Strategic Affairs Analyst; Author; Media Entrepreneur; Conflict Journalist &amp; Founder, BharatShakti Group</p>
+            </div>
+          </article>
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/ravi-murugan.jpg" data-caption="Maj Gen Ravi Murugan, PVSM, AVSM &mdash; NED 2026 speaker profile" aria-label="View Maj Gen Ravi Murugan, PVSM, AVSM&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/ravi-murugan.webp" alt="Maj Gen Ravi Murugan, PVSM, AVSM" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Maj Gen Ravi Murugan, PVSM, AVSM</h3>
+              <p>Former General Officer Commanding (GOC), Karnataka &amp; Kerala</p>
+            </div>
+          </article>
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/satish-kumar.jpg" data-caption="Satish Kumar &mdash; NED 2026 speaker profile" aria-label="View Satish Kumar&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/satish-kumar.webp" alt="Satish Kumar" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Satish Kumar</h3>
+              <p>President and Executive Director, Alliance for an Energy Efficient Economy (AEEE)</p>
+            </div>
+          </article>
+          <article class="spk">
+            <button type="button" class="spk-media" data-group="flyers" data-full="assets/img/flyers/soumya-swaminathan.jpg" data-caption="Soumya Swaminathan &mdash; NED 2026 speaker profile" aria-label="View Soumya Swaminathan&rsquo;s speaker profile">
+              <img class="spk-person" src="assets/img/speakers/soumya-swaminathan.webp" alt="Soumya Swaminathan" loading="lazy">
+              <span class="spk-zoom"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Profile</span>
+            </button>
+            <div class="spk-body">
+              <h3>Soumya Swaminathan</h3>
+              <p>Chairperson, MS Swaminathan Research Foundation &amp; Former WHO Chief Scientist</p>
+            </div>
+          </article>
       </div>
+      <p class="swipe-hint swipe-hint--dark">Swipe to see all 6 speakers</p>
     </div>
+    <img class="band-hills" src="assets/img/illustrations/band-hills-dark.svg" alt="" loading="lazy">
   </section>
 
   <!-- THOUGHT LEADERS COUNCIL -->
-  <section class="section section--tight" id="LEADERS" aria-labelledby="leaders-title">
+  <section class="council" id="LEADERS" aria-labelledby="leaders-title">
+    <img class="council-ridge" src="assets/img/illustrations/divider-hills.svg" alt="" loading="lazy">
     <div class="container">
       <div class="section-head reveal">
         <div>
           <p class="overline">The minds shaping the agenda</p>
           <h2 class="display display--md" id="leaders-title">Thought Leaders Council</h2>
         </div>
+        <p class="lede">Eight advisers from industry, science, diplomacy and public life who guide what NED talks about.</p>
       </div>
-      <div class="people people--leaders">
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/leaders/dinesh.jpg" alt="R Dinesh" width="400" height="400" loading="lazy"></span>
-          <h3>R Dinesh</h3>
-          <p>Past President, CII &amp; Executive Chairman, TVS Supply Chain Solutions</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/leaders/thomas.jpg" alt="Thomas John Muthoot" width="400" height="400" loading="lazy"></span>
-          <h3>Thomas John Muthoot</h3>
-          <p>Chairman, CII SR &amp; CMD, Muthoot Fincorp Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/leaders/kamal.jpg" alt="Kamal Bali" width="400" height="400" loading="lazy"></span>
-          <h3>Kamal Bali</h3>
-          <p>Past Chairman, CII SR &amp; MD, Volvo Group</p>
-        </article>
-        <article class="person reveal" data-delay="3">
-          <span class="avatar"><img src="assets/img/leaders/ranganathan.jpg" alt="CK Ranganathan" width="400" height="400" loading="lazy"></span>
-          <h3>CK Ranganathan</h3>
-          <p>MD, CavinKare</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/leaders/soumya.jpg" alt="Soumya Swaminathan" width="400" height="400" loading="lazy"></span>
-          <h3>Soumya Swaminathan</h3>
-          <p>Former WHO Chief Scientist</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/leaders/pankaj.jpg" alt="Pankaj Saran" width="400" height="400" loading="lazy"></span>
-          <h3>Pankaj Saran</h3>
-          <p>Former Dy National Security Advisor</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/leaders/rajamohan.jpg" alt="C Rajamohan" width="400" height="400" loading="lazy"></span>
-          <h3>C Rajamohan</h3>
-          <p>Indian Columnist</p>
-        </article>
-        <article class="person reveal" data-delay="3">
-          <span class="avatar"><img src="assets/img/leaders/akshaya.jpg" alt="Akshaya Mangala" width="400" height="400" loading="lazy"></span>
-          <h3>Akshaya Mangala</h3>
-          <p>Advisor, Oxford India Forum</p>
-        </article>
+      <div class="council-grid">
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-1.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/dinesh.webp" alt="R Dinesh" loading="lazy">
+            </div>
+            <h3>R Dinesh</h3>
+            <p>Past President, CII &amp; Executive Chairman, TVS Supply Chain Solutions</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-2.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/thomas.webp" alt="Thomas John Muthoot" loading="lazy">
+            </div>
+            <h3>Thomas John Muthoot</h3>
+            <p>Chairman, CII SR &amp; CMD, Muthoot Fincorp Ltd</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-3.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/kamal.webp" alt="Kamal Bali" loading="lazy">
+            </div>
+            <h3>Kamal Bali</h3>
+            <p>Past Chairman, CII SR &amp; MD, Volvo Group</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-4.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/ranganathan.webp" alt="CK Ranganathan" loading="lazy">
+            </div>
+            <h3>CK Ranganathan</h3>
+            <p>MD, CavinKare</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-1.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/soumya.webp" alt="Soumya Swaminathan" loading="lazy">
+            </div>
+            <h3>Soumya Swaminathan</h3>
+            <p>Former WHO Chief Scientist</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-2.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/pankaj.webp" alt="Pankaj Saran" loading="lazy">
+            </div>
+            <h3>Pankaj Saran</h3>
+            <p>Former Dy National Security Advisor</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-3.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/rajamohan.webp" alt="C Rajamohan" loading="lazy">
+            </div>
+            <h3>C Rajamohan</h3>
+            <p>Indian Columnist</p>
+          </article>
+          <article class="council-card">
+            <div class="arch">
+              <img class="arch-bg" src="assets/img/illustrations/arch-hills-4.svg" alt="" loading="lazy">
+              <img class="arch-person" src="assets/img/leaders/akshaya.webp" alt="Akshaya Mangala" loading="lazy">
+            </div>
+            <h3>Akshaya Mangala</h3>
+            <p>Advisor, Oxford India Forum</p>
+          </article>
       </div>
     </div>
   </section>
 
   <!-- STEERING COMMITTEE -->
-  <section class="section" id="SteeringCommittee" aria-labelledby="committee-title">
+  <section class="section committee" id="SteeringCommittee" aria-labelledby="committee-title">
     <div class="container">
       <div class="section-head reveal">
         <div>
-          <p class="overline">2026</p>
+          <p class="overline">NED 2026</p>
           <h2 class="display display--md" id="committee-title">Steering Committee</h2>
         </div>
+        <p class="lede">19 CII leaders from across South India who plan and steer the dialogue.</p>
       </div>
-      <div class="panel chair reveal">
-        <img src="assets/img/committee/shankar.jpg" alt="Shankar Vanavarayar" width="231" height="231" loading="lazy">
-        <div>
-          <span class="chip">Chair, NED 2026</span>
+      <div class="committee-layout">
+        <aside class="panel chair reveal">
+          <img src="assets/img/committee/shankar.jpg" alt="Shankar Vanavarayar" width="231" height="231" loading="lazy">
+          <span class="chip">Chair</span>
           <h3>Shankar Vanavarayar</h3>
           <p>Chair, NED 2026 &amp; Past Chairman, CII TN State Council</p>
+          <img class="chair-hills" src="assets/img/illustrations/band-hills-dark.svg" alt="" loading="lazy">
+        </aside>
+        <div>
+          <ul class="roster is-collapsed" id="roster" aria-label="Steering Committee members">
+          <li class="roster-item">
+            <img src="assets/img/committee/ravi.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>P Ravichandran</h3><p>Deputy Chairman, CII Southern Region &amp; President - Danfoss India, Danfoss Industries Pvt Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/nandini.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>R Nandini</h3><p>Immediate Past Chairperson, CII SR &amp; Managing Director, Chandra Textiles</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/unnikrishnan.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>AR Unnikrishnan</h3><p>Chairman, CII Tamil Nadu &amp; Managing Director - Glass Group, Saint Gobain India Pvt. Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/devarajan.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>C Devarajan</h3><p>Vice Chairman, CII Tamil Nadu &amp; Chairman &amp; Managing Director, URC Construction Pvt. Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/arun.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Arun Rathod</h3><p>National Vice Chairman, Young Indians &amp; Director, Flosil Group of Companies</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/gowri.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Gowri Kailasam</h3><p>Chairperson, IWN Southern Region &amp; Chief Executive Officer, Rane Madras Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/murali.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Murali Krishna</h3><p>Chairman, CII Andhra Pradesh &amp; Managing Director, Fluentgrid Limited</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/rabindra.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Rabindra Srikantan</h3><p>Chairman, CII Karnataka State Council and Managing Director, ASM Technologies Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/razak.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>VKC Razak</h3><p>Chairman, CII Kerala &amp; CMD, VKC Footgear Pvt Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/samir.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Samir Kamra</h3><p>Chairman, CII Puducherry &amp; CEO, Kosh Innovations</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/reddy.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>R S Reddy</h3><p>Chairman, CII Telangana &amp; Managing Director, Rachamallu Forgings Pvt. Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/ranganath.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>N K Ranganath</h3><p>Past Chairman, CII Tamil Nadu &amp; Director, Strategy Catalysts Pvt Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/srivats.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Srivats Ram</h3><p>Immediate Past Chairman, CII Tamil Nadu &amp; Managing Director, Wheels India Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/ramesh.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Ramesh Ramadurai</h3><p>Past Chairman, CII Karnataka &amp; Managing Director, 3M India Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/vijaykrishnan.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Vijaykrishnan Venkatesan</h3><p>Past Chairman, CII Karnataka &amp; Managing Director, Kennametal India Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/muthu.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Muthu Murugappan</h3><p>Wholetime Director &amp; CEO, EID Parry (India) Ltd</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/kezevino.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Kezevino Aram</h3><p>President, Shanti Ashram</p></div>
+          </li>
+          <li class="roster-item">
+            <img src="assets/img/committee/indrani.jpg" alt="" width="231" height="231" loading="lazy">
+            <div><h3>Indrani Bagchi</h3><p>Chief Executive Officer, Ananta Aspen Centre</p></div>
+          </li>
+          </ul>
+          <button class="btn btn--ghost roster-more" type="button" aria-controls="roster" aria-expanded="false" data-roster-more data-more="Show all 18 members" data-less="Show fewer members"><span>Show all 18 members</span></button>
         </div>
-        <div class="big-no">19<small>Committee members</small></div>
-      </div>
-      <div class="people people--committee">
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/ravi.jpg" alt="P Ravichandran" width="231" height="231" loading="lazy"></span>
-          <h3>P Ravichandran</h3>
-          <p>Deputy Chairman, CII Southern Region &amp; President - Danfoss India, Danfoss Industries Pvt Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/nandini.jpg" alt="R Nandini" width="231" height="231" loading="lazy"></span>
-          <h3>R Nandini</h3>
-          <p>Immediate Past Chairperson, CII SR &amp; Managing Director, Chandra Textiles</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/unnikrishnan.jpg" alt="AR Unnikrishnan" width="231" height="231" loading="lazy"></span>
-          <h3>AR Unnikrishnan</h3>
-          <p>Chairman, CII Tamil Nadu &amp; Managing Director - Glass Group, Saint Gobain India Pvt. Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/devarajan.jpg" alt="C Devarajan" width="231" height="231" loading="lazy"></span>
-          <h3>C Devarajan</h3>
-          <p>Vice Chairman, CII Tamil Nadu &amp; Chairman &amp; Managing Director, URC Construction Pvt. Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/arun.jpg" alt="Arun Rathod" width="231" height="231" loading="lazy"></span>
-          <h3>Arun Rathod</h3>
-          <p>National Vice Chairman, Young Indians &amp; Director, Flosil Group of Companies</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/gowri.jpg" alt="Gowri Kailasam" width="231" height="231" loading="lazy"></span>
-          <h3>Gowri Kailasam</h3>
-          <p>Chairperson, IWN Southern Region &amp; Chief Executive Officer, Rane Madras Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/murali.jpg" alt="Murali Krishna" width="231" height="231" loading="lazy"></span>
-          <h3>Murali Krishna</h3>
-          <p>Chairman, CII Andhra Pradesh &amp; Managing Director, Fluentgrid Limited</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/rabindra.jpg" alt="Rabindra Srikantan" width="231" height="231" loading="lazy"></span>
-          <h3>Rabindra Srikantan</h3>
-          <p>Chairman, CII Karnataka State Council and Managing Director, ASM Technologies Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/razak.jpg" alt="VKC Razak" width="231" height="231" loading="lazy"></span>
-          <h3>VKC Razak</h3>
-          <p>Chairman, CII Kerala &amp; CMD, VKC Footgear Pvt Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/samir.jpg" alt="Samir Kamra" width="231" height="231" loading="lazy"></span>
-          <h3>Samir Kamra</h3>
-          <p>Chairman, CII Puducherry &amp; CEO, Kosh Innovations</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/reddy.jpg" alt="R S Reddy" width="231" height="231" loading="lazy"></span>
-          <h3>R S Reddy</h3>
-          <p>Chairman, CII Telangana &amp; Managing Director, Rachamallu Forgings Pvt. Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/ranganath.jpg" alt="N K Ranganath" width="231" height="231" loading="lazy"></span>
-          <h3>N K Ranganath</h3>
-          <p>Past Chairman, CII Tamil Nadu &amp; Director, Strategy Catalysts Pvt Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/srivats.jpg" alt="Srivats Ram" width="231" height="231" loading="lazy"></span>
-          <h3>Srivats Ram</h3>
-          <p>Immediate Past Chairman, CII Tamil Nadu &amp; Managing Director, Wheels India Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/ramesh.jpg" alt="Ramesh Ramadurai" width="231" height="231" loading="lazy"></span>
-          <h3>Ramesh Ramadurai</h3>
-          <p>Past Chairman, CII Karnataka &amp; Managing Director, 3M India Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/vijaykrishnan.jpg" alt="Vijaykrishnan Venkatesan" width="231" height="231" loading="lazy"></span>
-          <h3>Vijaykrishnan Venkatesan</h3>
-          <p>Past Chairman, CII Karnataka &amp; Managing Director, Kennametal India Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="0">
-          <span class="avatar"><img src="assets/img/committee/muthu.jpg" alt="Muthu Murugappan" width="231" height="231" loading="lazy"></span>
-          <h3>Muthu Murugappan</h3>
-          <p>Wholetime Director &amp; CEO, EID Parry (India) Ltd</p>
-        </article>
-        <article class="person reveal" data-delay="1">
-          <span class="avatar"><img src="assets/img/committee/kezevino.jpg" alt="Kezevino Aram" width="231" height="231" loading="lazy"></span>
-          <h3>Kezevino Aram</h3>
-          <p>President, Shanti Ashram</p>
-        </article>
-        <article class="person reveal" data-delay="2">
-          <span class="avatar"><img src="assets/img/committee/indrani.jpg" alt="Indrani Bagchi" width="231" height="231" loading="lazy"></span>
-          <h3>Indrani Bagchi</h3>
-          <p>Chief Executive Officer, Ananta Aspen Centre</p>
-        </article>
       </div>
     </div>
   </section>
@@ -593,6 +619,7 @@
           <p>Perched high in the Nilgiris, this historic 1858 boarding school blends timeless heritage with holistic education amid pine-shrouded hills.</p>
         </article>
       </div>
+      <p class="swipe-hint">Swipe to see all three venues</p>
     </div>
   </section>
 
@@ -607,8 +634,11 @@
         <p class="lede">The sponsors and partners who made NED 2024 &amp; 2025 possible.</p>
       </div>
       <div class="card-outline supporters reveal">
-        <img src="assets/img/supporters.jpg" alt="NED 2024 and 2025 supporters: Principal sponsor Kumaraguru Institutions, with associate sponsors and partners" width="1600" height="871" loading="lazy">
+        <div class="supporters-scroll" tabindex="0" aria-label="Supporter logos">
+          <img src="assets/img/supporters.jpg" alt="NED 2024 and 2025 supporters: Principal sponsor Kumaraguru Institutions, with associate sponsors and partners" width="1600" height="871" loading="lazy">
+        </div>
       </div>
+      <p class="swipe-hint">Swipe sideways to see every supporter</p>
     </div>
   </section>
 
@@ -830,7 +860,8 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section section--tight" id="contact" aria-labelledby="contact-title">
+  <section class="contact-wrap" id="contact" aria-labelledby="contact-title">
+    <img class="landscape" src="assets/img/illustrations/nilgiris-landscape.svg" alt="Illustration of the Nilgiri hills with tea terraces and the mountain train" loading="lazy">
     <div class="container">
       <div class="panel contact reveal">
         <div class="starburst starburst--contact"><svg viewBox="-100 -100 200 200" aria-hidden="true"><defs><linearGradient id="sb" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#7854BA"/><stop offset=".55" stop-color="#9C66D8"/><stop offset="1" stop-color="#C47EFC"/></linearGradient><mask id="sbm"><rect x="-100" y="-100" width="200" height="200" fill="#fff"/><circle r="15" fill="#000"/></mask></defs><g fill="url(#sb)" mask="url(#sbm)"><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(0)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(15)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(30)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(45)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(60)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(75)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(90)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(105)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(120)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(135)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(150)"/><rect x="-98" y="-5.5" width="196" height="11" rx="2" transform="rotate(165)"/></g></svg></div>

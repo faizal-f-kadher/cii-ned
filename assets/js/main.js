@@ -107,6 +107,18 @@
     });
   }
 
+  /* ---------- steering committee "show all" (phones) ---------- */
+  var roster = document.getElementById("roster");
+  var rosterBtn = document.querySelector("[data-roster-more]");
+  if (roster && rosterBtn) {
+    rosterBtn.addEventListener("click", function () {
+      var collapsed = roster.classList.toggle("is-collapsed");
+      rosterBtn.setAttribute("aria-expanded", String(!collapsed));
+      rosterBtn.querySelector("span").textContent = collapsed ? rosterBtn.dataset.more : rosterBtn.dataset.less;
+      if (collapsed) roster.scrollIntoView({ block: "start" });
+    });
+  }
+
   /* ---------- lightbox (gallery photos + speaker flyers) ---------- */
   var lb = document.querySelector(".lightbox");
   var lbImg = lb.querySelector("img");
