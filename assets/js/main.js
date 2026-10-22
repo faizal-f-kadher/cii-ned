@@ -108,7 +108,7 @@
   }
 
   /* ---------- steering committee "show all" (phones) ---------- */
-  var roster = document.getElementById("roster");
+  var roster = document.getElementById("members");
   var rosterBtn = document.querySelector("[data-roster-more]");
   if (roster && rosterBtn) {
     rosterBtn.addEventListener("click", function () {

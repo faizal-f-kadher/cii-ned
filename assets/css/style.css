@@ -534,20 +534,43 @@ button { font: inherit; }
 .council-card h3 { font-family: var(--font-head); font-weight: 600; font-size: clamp(16px, 1.35vw, 19px); line-height: 1.25; color: var(--ink); margin: 0 0 6px; }
 .council-card p { margin: 0 auto; max-width: 260px; font-size: 13.5px; line-height: 1.5; color: var(--charcoal); }
 
-/* ---------- steering committee: chair + roster ---------- */
-.committee-layout { display: grid; grid-template-columns: minmax(250px, 310px) minmax(0, 1fr); gap: clamp(20px, 3vw, 44px); align-items: start; }
-.chair { position: sticky; top: calc(var(--header-h) + 24px); padding: clamp(24px, 2.6vw, 34px); padding-bottom: 120px; }
-.chair > img:first-child { width: 112px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; margin-bottom: 22px; box-shadow: 0 0 0 5px var(--navy), 0 0 0 7px var(--orchid); }
-.chair .chip { background: rgba(255, 255, 255, .14); color: #fff; }
-.chair h3 { font-family: var(--font-head); font-weight: 700; font-size: clamp(22px, 2vw, 28px); line-height: 1.15; margin: 12px 0 8px; }
-.chair p { margin: 0; font-size: 14.5px; line-height: 1.6; opacity: .9; }
-.chair-hills { position: absolute; left: 0; bottom: 0; z-index: -1; width: 100%; height: 96px; }
-.roster { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(20px, 3vw, 44px); }
-.roster-item { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; align-items: center; padding: 14px 4px; border-bottom: 1px solid var(--lav-40); }
-.roster-item:nth-child(-n+2) { border-top: 1px solid var(--lav-40); }
-.roster-item img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background: var(--lav-16); }
-.roster-item h3 { font-family: var(--font-head); font-weight: 600; font-size: 15.5px; line-height: 1.3; color: var(--ink); margin: 0 0 3px; }
-.roster-item p { margin: 0; font-size: 13px; line-height: 1.45; color: var(--charcoal); }
+/* ---------- steering committee: equal member cards on a contour map ---------- */
+.committee { position: relative; isolation: isolate; overflow: hidden; }
+.topo {
+  position: absolute; inset: 0; z-index: -1;
+  width: 100%; height: 100%; object-fit: cover; opacity: .55; pointer-events: none;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 40%, #000 35%, transparent 85%);
+  mask-image: radial-gradient(120% 90% at 50% 40%, #000 35%, transparent 85%);
+}
+.members { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.member {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 14px 18px 14px 14px;
+  background: rgba(255, 255, 255, .92);
+  border: 1.5px solid var(--lav-40);
+  border-radius: 22px;
+  transition: border-color .3s, box-shadow .3s, transform .4s var(--ease);
+}
+.member:hover { border-color: var(--lavender); box-shadow: 0 22px 34px -26px rgba(57, 55, 128, .55); transform: translateY(-3px); }
+.member-photo {
+  position: relative;
+  display: block;
+  width: 92px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #EFE7FF url("../img/illustrations/tile-hills.svg") center / cover no-repeat;
+}
+.member-photo img { position: absolute; left: 50%; bottom: 0; height: 94%; width: auto; max-width: none; transform: translateX(-50%); transform-origin: 50% 100%; transition: transform .5s var(--ease); }
+.member:hover .member-photo img { transform: translateX(-50%) scale(1.05); }
+.member h3 { font-family: var(--font-head); font-weight: 600; font-size: 16px; line-height: 1.3; color: var(--ink); margin: 0 0 5px; }
+.member-role { margin: 0; font-size: 13px; line-height: 1.45; font-weight: 500; color: var(--violet); }
+.member-org { margin: 3px 0 0; font-size: 12.5px; line-height: 1.45; color: var(--charcoal); }
+.members-more { display: none; }
+.member:last-child:nth-child(3n+1) { grid-column: 2; }
 
 /* ---------- venues ---------- */
 .venue-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -808,31 +831,19 @@ body.no-scroll { overflow: hidden; }
 
 /* ---------- section-level responsive (people, venues, docs, tracks, supporters) ---------- */
 .swipe-hint { display: none; }
-.roster-more { display: none; }
 
 @media (max-width: 1100px) {
   .council-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 14px; }
-  .roster { grid-template-columns: 1fr; }
-  .roster-item:nth-child(2) { border-top: 0; }
 }
 
 @media (max-width: 980px) {
   .spk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .committee-layout { grid-template-columns: 1fr; }
-  .chair { position: relative; top: auto; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 24px; align-items: center; padding-bottom: clamp(24px, 2.6vw, 34px); }
-  .chair > img:first-child { grid-row: span 3; margin: 0; width: 104px; }
-  .chair .chip { justify-self: start; }
-  .chair-hills { opacity: .5; }
-  .roster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .roster-item:nth-child(2) { border-top: 1px solid var(--lav-40); }
   .council-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .council-card p { font-size: 12.5px; }
 }
 
 @media (max-width: 760px) {
   .council-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 14px; }
-  .roster { grid-template-columns: 1fr; }
-  .roster-item:nth-child(2) { border-top: 0; }
 }
 
 @media (max-width: 640px) {
@@ -866,14 +877,6 @@ body.no-scroll { overflow: hidden; }
   .council-card h3 { font-size: 15px; }
   .council-card p { font-size: 12px; }
 
-  .chair { grid-template-columns: 1fr; text-align: left; padding: 22px; }
-  .chair > img:first-child { grid-row: auto; width: 88px; margin-bottom: 16px; }
-  .chair h3 { font-size: 21px; }
-  .chair p { font-size: 13.5px; }
-  .roster-item { grid-template-columns: 48px minmax(0, 1fr); gap: 14px; padding: 12px 2px; }
-  .roster-item img { width: 48px; height: 48px; }
-  .roster-item h3 { font-size: 15px; }
-  .roster-item p { font-size: 12.5px; }
 
   .venue { aspect-ratio: 4 / 5; }
 
@@ -898,8 +901,24 @@ body.no-scroll { overflow: hidden; }
 
   .landscape { height: 210px; margin-bottom: -16px; }
   .swipe-hint--dark { color: var(--lavender); }
-  .roster.is-collapsed .roster-item:nth-child(n+7) { display: none; }
-  .roster-more { display: flex; width: 100%; margin-top: 16px; }
+}
+
+
+@media (max-width: 1100px) {
+  .members { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .member:last-child:nth-child(3n+1) { grid-column: auto; }
+  .member:last-child:nth-child(2n+1) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 8px); }
+}
+@media (max-width: 640px) {
+  .members { grid-template-columns: 1fr; gap: 10px; }
+  .member:last-child:nth-child(2n+1) { width: auto; justify-self: stretch; }
+  .member { grid-template-columns: 76px minmax(0, 1fr); gap: 14px; padding: 12px 14px 12px 12px; border-radius: 18px; }
+  .member-photo { width: 76px; border-radius: 16px; }
+  .member h3 { font-size: 15px; }
+  .member-role { font-size: 12.5px; }
+  .member-org { font-size: 12px; }
+  .members.is-collapsed .member:nth-child(n+7) { display: none; }
+  .members-more { display: flex; width: 100%; margin-top: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
